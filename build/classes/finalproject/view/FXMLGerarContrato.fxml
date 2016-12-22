@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.controller.FXMLGerarContratoController">
+   <children>
+      <VBox layoutX="15.0" layoutY="14.0" prefHeight="582.0" prefWidth="749.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="749.0" text="Gerar Contrato">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblContratos" prefHeight="266.0" prefWidth="749.0">
+              <columns>
+                  <TableColumn fx:id="clCodContrato" prefWidth="54.0" text="Cod Contrato" />
+                <TableColumn fx:id="clCampoMetragem" prefWidth="53.0" text="Metragem" />
+                <TableColumn fx:id="clCorTinta" minWidth="3.0" prefWidth="53.0" text="Cor Tinta" />
+                  <TableColumn fx:id="clRevestimento" minWidth="0.0" prefWidth="65.0" text="Revestimento" />
+                  <TableColumn fx:id="clTipoPapelParede" prefWidth="63.0" text="Tipo Papel de Parede" />
+                  <TableColumn fx:id="clDataServicoInicio" prefWidth="60.0" text="Data Início Serviço" />
+                  <TableColumn fx:id="clDataServicoFim" prefWidth="60.0" text="Data Fim Serviço" />
+                  <TableColumn fx:id="clFotoDoLocal" prefWidth="60.0" text="Foto Do Local" />
+                  <TableColumn fx:id="clFormaDePagamento" minWidth="0.0" prefWidth="73.0" text="Forma De Pagamento" />
+                  <TableColumn fx:id="clCodigoServico" prefWidth="65.0" text="Serviço" />
+                  <TableColumn fx:id="clCpfCliente" prefWidth="68.0" text="CPF Cliente" />
+                  <TableColumn fx:id="clStatusContrato" prefWidth="72.0" text="Status Contrato" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtCodContrato" prefHeight="25.0" prefWidth="109.0" promptText="Cod Contrato" />
+                  <TextField fx:id="txtCampoMetragem" prefHeight="25.0" prefWidth="90.0" promptText="Metragem" />
+                  <TextField fx:id="txtCorTinta" promptText="Cor Tinta" />
+                  <TextField fx:id="txtRevestimento" promptText="Revestimento" />
+                  <TextField fx:id="txtTipoPapelParede" prefHeight="25.0" prefWidth="182.0" promptText="Tipo Papel Parede" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <DatePicker fx:id="dpDataServicoInicio" promptText="Data Início Serviço" />
+                  <DatePicker fx:id="dpDataServicoFim" promptText="Data Fim Serviço" />
+                  <TextField fx:id="txtFotoDoLocal" prefHeight="25.0" prefWidth="306.0" promptText="Caminho Foto Do Local" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <ComboBox fx:id="cbFormaDePagamento" prefHeight="25.0" prefWidth="175.0" promptText="Forma Pagamento" />
+                  <ComboBox fx:id="cbCodigoServico" prefHeight="25.0" prefWidth="166.0" promptText="Codigo Serviço" />
+                  <ComboBox fx:id="cbCpfCliente" prefHeight="25.0" prefWidth="176.0" promptText="CPF Cliente" />
+                  <ComboBox fx:id="cbStatusContrato" prefHeight="25.0" prefWidth="164.0" promptText="Status Contrato" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#salvar" text="Inserir" />
+                  <Button fx:id="btnAtualizar" mnemonicParsing="false" onAction="#atualizar" text="Alterar" />
+                  <Button fx:id="btnApagar" mnemonicParsing="false" onAction="#apagar" text="Deletar" />
+                  <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#limpar" text="Limpar Tela" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

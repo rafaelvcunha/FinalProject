@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.controller.FXMLCadastroClienteController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="582.0" prefWidth="749.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="749.0" text="Cadastro de Clientes">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblClientes" prefHeight="257.0" prefWidth="749.0">
+              <columns>
+                <TableColumn fx:id="clNome" prefWidth="96.0" text="Nome" />
+                <TableColumn fx:id="clSobreNome" prefWidth="76.0" text="Sobre Nome" />
+                  <TableColumn fx:id="clCpf" prefWidth="145.0" text="CPF" />
+                  <TableColumn fx:id="clLogradouro" prefWidth="65.0" text="Rua" />
+                  <TableColumn fx:id="clNumero" prefWidth="66.0" text="Número" />
+                  <TableColumn fx:id="clBairro" prefWidth="67.0" text="Bairro" />
+                  <TableColumn fx:id="clCep" prefWidth="79.0" text="CEP" />
+                  <TableColumn fx:id="clEstado" prefWidth="73.0" text="Estado" />
+                  <TableColumn fx:id="clPais" prefWidth="81.0" text="País" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtNome" promptText="Nome" />
+                  <TextField fx:id="txtSobreNome" promptText="Sobre Nome" />
+                  <TextField fx:id="txtCpf" promptText="CPF" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtLogradouro" promptText="Rua" />
+                  <TextField fx:id="txtNumero" promptText="Número" />
+                  <TextField fx:id="txtBairro" promptText="Bairro" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtCep" promptText="CEP" />
+                  <TextField fx:id="txtEstado" promptText="Estado" />
+                  <TextField fx:id="txtPais" promptText="País" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#salvar" text="Inserir" />
+                  <Button fx:id="btnAtualizar" mnemonicParsing="false" onAction="#atualizar" text="Alterar" />
+                  <Button fx:id="btnApagar" mnemonicParsing="false" onAction="#apagar" text="Deletar" />
+                  <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#limpar" text="Limpar Tela" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

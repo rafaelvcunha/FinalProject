@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.controller.FXMLVBoxMainController">
+   <children>
+      <MenuBar prefHeight="14.0" prefWidth="573.0">
+        <menus>
+          <Menu fx:id="menuCadastros" mnemonicParsing="false" text="Cadastros">
+               <items>
+                  <MenuItem fx:id="menuItemCadastroCliente" mnemonicParsing="false" onAction="#handleMenuCadastroCliente" text="Cadastro de Clientes" />
+                  <MenuItem fx:id="menuItemCadastroServicos" mnemonicParsing="false" onAction="#handleMenuCadastroServico" text="Cadastro de Serviços" />
+               </items></Menu>
+          <Menu fx:id="menuContratos" mnemonicParsing="false" text="Contratos">
+               <items>
+                  <MenuItem fx:id="menuItemGerarContrato" mnemonicParsing="false" onAction="#handleMenuGerarContrato" text="Gerar Contrato" />
+                  <MenuItem fx:id="menuItemBuscarContrato" mnemonicParsing="false" onAction="#handleMenuBuscarContrato" text="Buscar Contratos" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" prefHeight="610.0" prefWidth="778.0" />
+   </children>
+</VBox>

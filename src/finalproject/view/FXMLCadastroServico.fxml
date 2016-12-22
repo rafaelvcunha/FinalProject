@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.controller.FXMLCadastroServicoController">
+   <children>
+      <VBox layoutX="15.0" layoutY="14.0" prefHeight="582.0" prefWidth="749.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="749.0" text="Cadastro de Serviços">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblServicos" prefHeight="368.0" prefWidth="749.0">
+               <columns>
+                  <TableColumn fx:id="clCodigo" prefWidth="118.0" text="Código" />
+                  <TableColumn fx:id="clServico" prefWidth="153.0" text="Serviço" />
+                  <TableColumn fx:id="clDescricao" prefWidth="477.0" text="Descrição" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtCodigo" prefHeight="25.0" prefWidth="127.0" promptText="Código" />
+                  <TextField fx:id="txtServico" promptText="Serviço" />
+                  <TextField fx:id="txtDescricao" prefHeight="25.0" prefWidth="362.0" promptText="Descrição" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="749.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#salvar" text="Inserir" />
+                  <Button fx:id="btnAtualizar" mnemonicParsing="false" onAction="#atualizar" text="Alterar" />
+                  <Button fx:id="btnApagar" mnemonicParsing="false" onAction="#apagar" text="Deletar" />
+                  <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#limpar" text="Limpar Tela" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
