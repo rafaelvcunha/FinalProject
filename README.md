@@ -1,1 +1,3 @@
 # FinalProject
+
+Projeto promovido pelo mestre da disciplina projeto  interdisciplinar III na Faculdade Anhembi Morumbi. Foi solicitado atender a  necessidade de uma empresa fictícia de engenharia que precisava de um sistema para  gestão de reformas, onde os requisitos foram: Cadastro de Clientes, Cadastro de  Serviços, Geração de Contratos e Busca de Contratos. Fui o único desenvolvedor do  grupo, no qual desenvolvemos uma aplicação Standalone com JavaFx 8, utilizando  novidades do Java 8 como lambdas. Para a persistência trabalhei com arquivos em  CSV. Período do projeto: agosto de 2016 à novembro de 2016.
